@@ -140,7 +140,7 @@ class Proses extends CI_Controller {
                         <div class="uk-width-medium-7-10">
                             <h3>Data Siswa Kelas ' . $kl->nm_kelas . '</h3>
                         </div>
-                        <div class="uk-width-medium-3-10 uk-text-right">
+                        <div class="uk-width-medium-3-10 uk-text-right uk-hidden">
                             <a data-uk-modal="{target:' . $a . '#tambah_siswa_' . $kl->id_kelas . '' . $a . '}" class="md-btn md-btn-primary md-btn-wave-light"><i class="fas fa-plus-circle"></i></a>
                         </div>
                     </div><hr>';
@@ -148,7 +148,7 @@ class Proses extends CI_Controller {
                 echo '
                     <div class="table-responsive">
                         <form action="' . base_url('proses/hapus_siswa2') . '" method="post" id="form-delete-' . $kl->id_kelas . '">
-                        <table class="uk-table uk-table-striped dt_default" cellspacing="0" width="100%">
+                        <table class="uk-table uk-table-striped dt_default" style="white-space: nowrap;" cellspacing="0" width="100%">
                             <thead>
                                 <tr>
                                     <th style="width: 10px;">
