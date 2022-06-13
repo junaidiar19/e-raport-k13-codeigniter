@@ -196,7 +196,7 @@ class Cetak extends CI_Controller {
         $mpdf->Output('Report R-1 ' . $nis . '.PDF', 'I');
     }
 
-    public function cetak_r2_($id, $nis, $ta) {
+    public function cetak_r2($id, $nis, $ta) {
 
         $mpdf = new \Mpdf\Mpdf(['format' => 'A4']);
 
@@ -211,7 +211,7 @@ class Cetak extends CI_Controller {
         $mpdf->Output('Report R-2 ' . $nis . '.PDF', 'I');
     }
 
-    public function cetak_r2($id, $nis, $ta) {
+    public function cetak_r2_($id, $nis, $ta) {
 
         // $mpdf = new \Mpdf\Mpdf(['format' => 'A4']);
 
